@@ -33,11 +33,8 @@ a {
     background: var(--background-color);
     width: 100%;
     height: 60px;
-    position: fixed;
-    
-    /* 사실 top, left 없어도 상단에 고정된다. */
+    position: sticky;
     top: 0;
-    left: 0;
 
     display: flex;
     justify-content: space-between;
