@@ -1,7 +1,7 @@
 :root {
     --text-color: #f0f4f5;
     --background-color: #4b6708;
-    --accent-background-color: #90c085;
+    --accent-background-color: #a5ca82;
 }
 
 * {
@@ -35,7 +35,6 @@ a {
     height: 60px;
     position: sticky;
     top: 0;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,26 +43,26 @@ a {
     z-index: 9;
 }
 
-.navbar-logo {
+.navbar__logo {
     color: var(--text-color);
 }
 
-.navbar-menu {
+.navbar__menu {
     display: flex;
 }
 
-.navbar-menu__item {
+.navbar__menu li {
     padding: 8px;
     /* padding이 있는데도 margin-left를 추가한 이유는? */
     margin-left: 8px;
 }
 
-.navbar-menu__item:hover {
+.navbar__menu li:hover {
     background-color: var(--accent-background-color);
     border-radius: 4px;
 }
 
-.navbar-menu__item a {
+.navbar__menu li a {
     color: var(--text-color);
     text-transform: capitalize;
 }
