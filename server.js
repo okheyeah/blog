@@ -23,6 +23,25 @@ app.get('/editor', (req, res) => {
   res.sendFile(path.join(initial_path, "editor.html"));
 })
 
+// `/upload` 경로에 대한 라우트
+app.post('/upload', (req, res) => {
+  let file = req.files.image;
+  let data = new Date();
+  let imagename = date.getData() + date.getTime() + file.name;
+  // image upload path
+  let path = 'public/uploads/' + imagename;
+
+  // create upload
+  file.mv(path, (err, result) => {
+    if(err) {
+      throw err;
+    } else {
+        // our image upload path
+        res.json(`uploads/${imagename}`)
+    }
+  })
+})
+
 // 서버 시작
 app.listen('3000', () => {
   console.log('listening......');
