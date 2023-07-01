@@ -28,6 +28,10 @@ a {
     text-decoration: none;
 }
 
+button {
+    all: unset;
+}
+
 ::selection {
     background: var(--background-color);
     color: var(--white-color);
@@ -139,7 +143,6 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 80px
-
 }
 
 .post-card__thumbnail {

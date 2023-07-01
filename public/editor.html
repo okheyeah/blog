@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seon's Blog: Editor</title>
+
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/editor.css">
+    <script src="https://kit.fontawesome.com/406db17086.js" crossorigin="anonymous"></script>
+    <script src="js/editor.js" defer></script>
+</head>
+<body>
+    <!-- Post Banner -->
+    <div class="banner">
+        <input type="file" accept="image/*" id="banner-upload" hidden>
+        <label for="banner-upload" class="banner-upload__btn">
+            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+        </label>
+    </div>
+
+    <!-- Post -->
+    <div class="post">
+        <textarea type="text" class="post__title" placeholder="제목을 입력하세요..."></textarea>
+        <textarea type="text" class="post__content" placeholder="내용을 입력하세요..."></textarea>
+    </div>
+
+    <!-- Post Options -->
+    <div class="post-options">
+        <button class="btn dark publish-btn">발행하기</button>
+        <input type="file" accept="image/*" id="image-upload" hidden>
+        <label for="image-upload" class="btn grey upload-btn">이미지 업로드</label>
+    </div>
+</body>
+</html>
