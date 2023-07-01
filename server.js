@@ -19,6 +19,10 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(initial_path, 'home.html'));
 });
 
+app.get('/editor', (req, res) => {
+  res.sendFile(path.join(initial_path, "editor.html"));
+})
+
 // 서버 시작
 app.listen('3000', () => {
   console.log('listening......');
